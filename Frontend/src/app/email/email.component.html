@@ -1,0 +1,26 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">From </th>
+            <th scope="col">To </th>
+            <th scope="col">Subject </th>
+            <th scope="col">Content </th>
+            <th scope="col">Attachment </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let email of users">
+            <td>{{ email.id }}</td>
+            <td>{{ email.mailfrom }}</td>
+            <td>{{ email.mailto }}</td>
+            <td>{{ email.mailsubject }}</td>
+            <td>{{ email.mailcontent }}</td>
+            <td>{{ email.attachments }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
